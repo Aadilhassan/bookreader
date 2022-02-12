@@ -60,11 +60,11 @@ BASE_URL='https://archive.org' npx testcafe
 For OCAIDs you should pick the specific test file to run, since things like autoplay tests won't work. The main tests are in `base.test.js`.
 
 ```sh
-OCAIDS='goody,goodytwoshoes00newyiala' npx testcafe tests/e2e/base.test.js
-OCAIDS='goody,goodytwoshoes00newyiala' BASE_URL='https://archive.org' npx testcafe tests/e2e/base.test.js
+OCAID='goodytwoshoes00newyiala' npx testcafe tests/e2e/base.test.js
+OCAID='goodytwoshoes00newyiala' BASE_URL='https://archive.org' npx testcafe tests/e2e/base.test.js
 
 # right to left book; note this also runs the base tests
-OCAIDS='gendaitankashu00meijuoft' BASE_URL='https://archive.org' npx testcafe tests/e2e/rightToLeft.test.js
+OCAID='gendaitankashu00meijuoft' BASE_URL='https://archive.org' npx testcafe tests/e2e/rightToLeft.test.js
 ```
 
 ### Running tests with browserstack
